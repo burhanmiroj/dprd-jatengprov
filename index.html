@@ -81,12 +81,16 @@
                 <div x-data="{ open: false }" class="flex flex-col lg:items-center lg:justify-between lg:flex-row w-full">
                     <div class="flex flex-row items-center justify-between p-2 md:p-4">
                         <!-- LOGO -->
-                        <a href="./index.html">
-                            <img src="./asset/img/dprd-jateng-logo.png" class="h-10 hidden xl:flex xl:-ml-5" alt="Logo DPRD">
-                        </a>
-                        <a href="./index.html">
-                            <img src="./asset/img/dprd-jateng-logo-mobile.png" class="h-10 flex xl:hidden" alt="Logo DPRD">
-                        </a>
+                        <div class="justify-start w-full hidden xl:flex">
+                            <a href="./index.html">
+                                <img src="./asset/img/dprd-jateng-logo.png" class="h-10 xl:-ml-5" alt="Logo DPRD">
+                            </a>
+                        </div>
+                        <div class="justify-start w-full flex xl:hidden">
+                            <a href="./index.html">
+                                <img src="./asset/img/dprd-jateng-logo-mobile.png" class="h-10" alt="Logo DPRD">
+                            </a>
+                        </div>
                         <button @click="open = !open" class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline">
                             <svg x-show="!open" x-transition class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                             <svg x-show="open" x-transition class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -236,7 +240,7 @@
                         <!-- SINGLE DROPDOWN -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative">
                             <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
-                                <span class="ml-1">Kelengkapan dewan</span>
+                                <span class="ml-1">Kelengkapan Dewan</span>
                                 <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
                             <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-right">
@@ -312,14 +316,14 @@
     <!-- END : HEADER -->
     <!-- START : ARTICLE -->
     <section class="w-full px-5 lg:px-12 max-w-screen-xl mx-auto mt-16 md:mt-20">
-        <div class="flex justify-between items-center pt-5">
-            <h1 class="text-xl md:text-2xl font-semibold text-center text-slate-700">Berita</h1>
+        <div class="flex justify-between items-center pt-10">
+            <h1 class="text-xl md:text-2xl font-semibold text-center text-slate-700">Berita terbaru</h1>
             <a href="./detail-artikel.html" class="flex items-center justify-center mt-3 w-40 bg-slate-900 hover:bg-slate-700 transition-all duration-300 focus:ring-2 focus:ring-slate-300 py-3.5 rounded-md text-white font-semibold mb-2">
                 <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7Zm0 2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2ZM4 9V8h1v1H4Zm3.5-2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3Zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3ZM1 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2a2 2 0 0 1 2 2v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 10.5V4Zm11.5 6.5a.5.5 0 0 1-.5-.5V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v6.5A1.5 1.5 0 0 0 3.5 12h9a1.5 1.5 0 0 0 1.5-1.5V6a1 1 0 0 0-1-1v5a.5.5 0 0 1-.5.5Z"/></svg>
                 <span class="text-xs uppercase">Semua berita</span>
             </a>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 -mt-2">
             <!-- SINGLE ARTICLE -->
             <div class="w-full mt-5 bg-white rounded-lg shadow-md h-72 relative overflow-hidden">
                 <div class="w-full h-full relative z-10">
