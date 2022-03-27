@@ -81,8 +81,12 @@
                 <div x-data="{ open: false }" class="flex flex-col lg:items-center lg:justify-between lg:flex-row w-full">
                     <div class="flex flex-row items-center justify-between p-2 md:p-4">
                         <!-- LOGO -->
-                        <img src="./asset/img/dprd-jateng-logo.png" class="h-10 hidden xl:flex xl:-ml-5" alt="Logo DPRD">
-                        <img src="./asset/img/dprd-jateng-logo-mobile.png" class="h-10 flex xl:hidden" alt="Logo DPRD">
+                        <a href="./index.html">
+                            <img src="./asset/img/dprd-jateng-logo.png" class="h-10 hidden xl:flex xl:-ml-5" alt="Logo DPRD">
+                        </a>
+                        <a href="./index.html">
+                            <img src="./asset/img/dprd-jateng-logo-mobile.png" class="h-10 flex xl:hidden" alt="Logo DPRD">
+                        </a>
                         <button @click="open = !open" class="rounded-lg lg:hidden focus:outline-none focus:shadow-outline">
                             <svg x-show="!open" x-transition class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                             <svg x-show="open" x-transition class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
@@ -91,7 +95,7 @@
                     <div :class="{'flex': open, 'hidden': !open}"
                      class="flex-col flex-grow hidden pb-2 md:pb-4 lg:pb-0 lg:flex lg:justify-end lg:flex-row lg:items-center">
                         <!-- SINGLE -->
-                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="./detail-artikel.html">Beranda</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="#">Beranda</a>
                         <!-- SINGLE -->  
                         <!-- SINGLE DROPDOWN -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative">
@@ -99,27 +103,62 @@
                                 <span class="ml-1">Profil</span>
                                 <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
-                            <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-right">
+                            <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 left-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-left">
                                 <ul class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg w-full">
                                     <li class="p-3 hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Selayang Pandang</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Selayang Pandang</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Tugas dan Wewenang</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Tugas dan Wewenang</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Kewajiban Anggota</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Kewajiban Anggota</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Visi & Misi</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Visi & Misi</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>    
                         <!-- SINGLE -->
-                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="./detail-artikel.html">Pimpinan</a>
+                        <!-- SINGLE DROPDOWN -->
+                        <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
+                                <span class="ml-1">Sekretariat</span>
+                                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                            </button>
+                            <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 left-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-left">
+                                <ul class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg w-full">
+                                    <li class="p-3 hover:bg-slate-200 rounded-md">
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Tentang Sekretariat</a>
+                                    </li>
+                                    <li class="p-3 border-t hover:bg-slate-200 rounded-md">
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Tugas Pokok dan Fungsi</a>
+                                    </li>
+                                    <li class="p-3 border-t hover:bg-slate-200 rounded-md">
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Struktur</a>
+                                    </li>
+                                    <div x-data="{ openSubmenu : false }" class="relative">
+                                        <li class="p-3 border-t hover:bg-slate-200 rounded-md">
+                                            <button @click="openSubmenu = !openSubmenu" class="text-sm flex justify-between items-center w-full h-full hover:text-slate-400">
+                                                <span>Dokumen</span>
+                                                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-90': openSubmenu, 'rotate-120': !openSubmenu}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                            </button>
+                                        </li>
+                                        <div x-show="openSubmenu" @click.away="!openSubmenu" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 left-0 lg:left-full w-full lg:w-72 mt-2 lg:mt-5 lg:ml-1 top-full transform lg:-translate-y-20 origin-top-left">
+                                            <ul class="px-2 pt-2 pb-2 bg-white rounded-lg shadow-lg w-full border lg:border-none">
+                                                <li class="p-3 hover:bg-slate-200 rounded-md">
+                                                    <a @click="openSubmenu = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Perjanjian Kinerja</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>   
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="#">Pimpinan</a>
                         <!-- SINGLE -->
-                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="./detail-artikel.html">Dapil</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="#">Dapil</a>
                         <!-- SINGLE DROPDOWN -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative">
                             <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
@@ -130,7 +169,7 @@
                                 <div class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg dark-mode:bg-gray-700">
                                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                             <img class="w-12" src="./asset/img/partai/demokrat.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">Demokrat</p>
@@ -138,7 +177,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                             <img class="w-12 drop-shadow" src="./asset/img/partai/gerindra.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">Gerindra</p>
@@ -146,7 +185,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                             <img class="w-12" src="./asset/img/partai/golkar.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">Golkar</p>
@@ -154,7 +193,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                             <img class="w-12" src="./asset/img/partai/pan.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PAN</p>
@@ -162,7 +201,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                             <img class="w-12" src="./asset/img/partai/pdip.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PDIP</p>
@@ -170,7 +209,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                             <img class="w-12" src="./asset/img/partai/pkb.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PKB</p>
@@ -178,7 +217,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                             <img class="w-12" src="./asset/img/partai/pks.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PKS</p>
@@ -186,7 +225,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                             <img class="w-12" src="./asset/img/partai/ppp.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PPP</p>
@@ -206,61 +245,36 @@
                             <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-right">
                                 <ul class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg w-full">
                                     <li class="p-3 hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi A</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi A</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi B</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi B</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi C</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi C</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi D</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi D</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi E</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi E</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Badan Kehormatan</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Badan Kehormatan</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Badan Musyawarah</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Badan Musyawarah</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Badan Pembentukan Peraturan Daerah</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Badan Pembentukan Peraturan Daerah</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Badan Anggaran</a>
+                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Badan Anggaran</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>    
-                        <!-- SINGLE DROPDOWN -->
-                        <div x-data="{ open: false }" @click.away="open = false" class="relative">
-                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
-                                <span class="ml-1">Setwan</span>
-                                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </button>
-                            <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-right">
-                                <ul class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg w-full">
-                                    <li class="p-3 hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Tentang Setwan</a>
-                                    </li>
-                                    <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Umum</a>
-                                    </li>
-                                    <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Persidangan</a>
-                                    </li>
-                                    <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Keuangan</a>
-                                    </li>
-                                    <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Humas</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>    
+                         
                         <!-- SINGLE DROPDOWN -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative md:mr-3">
                             <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
@@ -270,7 +284,7 @@
                             <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-right">
                                 <div class="p-2.5 bg-white rounded-lg shadow-lg dark-mode:bg-gray-700">
                                     <!-- SINGLE LINK -->
-                                    <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
+                                    <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                         <img class="w-12" src="./asset/img/icon/letter.svg" alt="">
                                         <div class="ml-3">
                                             <p class="font-semibold">Surat</p>
