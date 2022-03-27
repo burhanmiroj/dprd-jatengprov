@@ -1,5 +1,23 @@
 {
-  "dependencies": {
+  "name": "dprd-jateng",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "devDependencies": {
     "tailwindcss": "^3.0.23"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurhanMiroj/dprd-jatengprov.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BurhanMiroj/dprd-jatengprov/issues"
+  },
+  "homepage": "https://github.com/BurhanMiroj/dprd-jatengprov#readme",
+  "description": ""
 }

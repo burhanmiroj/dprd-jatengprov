@@ -91,7 +91,7 @@
                     <div :class="{'flex': open, 'hidden': !open}"
                      class="flex-col flex-grow hidden pb-2 md:pb-4 lg:pb-0 lg:flex lg:justify-end lg:flex-row lg:items-center">
                         <!-- SINGLE -->
-                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="#">Beranda</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="./detail-artikel.html">Beranda</a>
                         <!-- SINGLE -->  
                         <!-- SINGLE DROPDOWN -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative">
@@ -102,24 +102,24 @@
                             <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-right">
                                 <ul class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg w-full">
                                     <li class="p-3 hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Selayang Pandang</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Selayang Pandang</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Tugas dan Wewenang</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Tugas dan Wewenang</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Kewajiban Anggota</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Kewajiban Anggota</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Visi & Misi</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Visi & Misi</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>    
                         <!-- SINGLE -->
-                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="#">Pimpinan</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="./detail-artikel.html">Pimpinan</a>
                         <!-- SINGLE -->
-                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="#">Dapil</a>
+                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="./detail-artikel.html">Dapil</a>
                         <!-- SINGLE DROPDOWN -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative">
                             <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
@@ -130,7 +130,7 @@
                                 <div class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg dark-mode:bg-gray-700">
                                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
                                             <img class="w-12" src="./asset/img/partai/demokrat.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">Demokrat</p>
@@ -138,7 +138,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
                                             <img class="w-12 drop-shadow" src="./asset/img/partai/gerindra.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">Gerindra</p>
@@ -146,7 +146,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
                                             <img class="w-12" src="./asset/img/partai/golkar.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">Golkar</p>
@@ -154,7 +154,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
                                             <img class="w-12" src="./asset/img/partai/pan.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PAN</p>
@@ -162,7 +162,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
                                             <img class="w-12" src="./asset/img/partai/pdip.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PDIP</p>
@@ -170,7 +170,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
                                             <img class="w-12" src="./asset/img/partai/pkb.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PKB</p>
@@ -178,7 +178,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
                                             <img class="w-12" src="./asset/img/partai/pks.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PKS</p>
@@ -186,7 +186,7 @@
                                             </div>
                                         </a>
                                         <!-- SINGLE LINK -->
-                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
                                             <img class="w-12" src="./asset/img/partai/ppp.svg" alt="">
                                             <div class="ml-3">
                                                 <p class="font-semibold">PPP</p>
@@ -206,31 +206,31 @@
                             <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-right">
                                 <ul class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg w-full">
                                     <li class="p-3 hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi A</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi A</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi B</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi B</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi C</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi C</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi D</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi D</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Komisi E</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Komisi E</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Badan Kehormatan</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Badan Kehormatan</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Badan Musyawarah</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Badan Musyawarah</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Badan Pembentukan Peraturan Daerah</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Badan Pembentukan Peraturan Daerah</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Badan Anggaran</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Badan Anggaran</a>
                                     </li>
                                 </ul>
                             </div>
@@ -244,19 +244,19 @@
                             <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-right">
                                 <ul class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg w-full">
                                     <li class="p-3 hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Tentang Setwan</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Tentang Setwan</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Umum</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Umum</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Persidangan</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Persidangan</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Keuangan</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Keuangan</a>
                                     </li>
                                     <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Humas</a>
+                                        <a @click="open = false" href="./detail-artikel.html" class="text-sm flex w-full h-full hover:text-slate-400">Bagian Humas</a>
                                     </li>
                                 </ul>
                             </div>
@@ -270,7 +270,7 @@
                             <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-right">
                                 <div class="p-2.5 bg-white rounded-lg shadow-lg dark-mode:bg-gray-700">
                                     <!-- SINGLE LINK -->
-                                    <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                    <a @click="open = false" class="flex row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="./detail-artikel.html">
                                         <img class="w-12" src="./asset/img/icon/letter.svg" alt="">
                                         <div class="ml-3">
                                             <p class="font-semibold">Surat</p>
@@ -292,7 +292,7 @@
     </header>
     <!-- END : HEADER -->
     <!-- START : ARTICLE -->
-    <section class="w-full px-5 lg:px-12 max-w-screen-xl mx-auto mt-20">
+    <section class="w-full px-5 lg:px-12 max-w-screen-xl mx-auto mt-16 md:mt-20">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <!-- SINGLE ARTICLE -->
             <div class="w-full mt-5 bg-white rounded-lg shadow-md h-72 relative overflow-hidden">
@@ -302,11 +302,11 @@
                 <div class="w-ful h-full absolute inset-0 z-10 bg-gradient-to-t from-slate-900 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 w-full z-20 flex flex-col justify-end p-5">
                     <div class="flex justify-between items-center">
-                        <a class="px-3 py-1 bg-red-500 hover:bg-red-600 text-gray-100 font-bold uppercase text-xs rounded" href="#">Design</a>
+                        <a class="px-3 py-1 bg-red-500 hover:bg-red-600 text-gray-100 font-bold uppercase text-xs rounded" href="./detail-artikel.html">Design</a>
                     </div>
                     <!-- TITLE -->
                     <div class="mt-2">
-                        <a href="#" class="text-xl text-slate-200 hover:text-slate-300">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
+                        <a href="./detail-artikel.html" class="text-xl text-slate-200 hover:text-slate-300">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
                     </div>
                     <!-- AUTHOR & DATE -->
                     <div class="flex justify-between items-center mt-4">
@@ -317,7 +317,7 @@
                                 <span class="font-light text-slate-100 text-xs">26 Mar 2022</span>
                             </div>
                         </div>
-                        <!-- <a class="text-blue-600 hover:underline" href="#">Read more</a> -->
+                        <!-- <a class="text-blue-600 hover:underline" href="./detail-artikel.html">Read more</a> -->
                     </div>
                 </div>
             </div>
@@ -329,11 +329,11 @@
                 <div class="w-ful h-full absolute inset-0 z-10 bg-gradient-to-t from-slate-900 to-transparent"></div>
                 <div class="absolute bottom-0 left-0 w-full z-20 flex flex-col justify-end p-5">
                     <div class="flex justify-between items-center">
-                        <a class="px-3 py-1 bg-red-500 hover:bg-red-600 text-gray-100 font-bold uppercase text-xs rounded" href="#">Design</a>
+                        <a class="px-3 py-1 bg-red-500 hover:bg-red-600 text-gray-100 font-bold uppercase text-xs rounded" href="./detail-artikel.html">Design</a>
                     </div>
                     <!-- TITLE -->
                     <div class="mt-2">
-                        <a href="#" class="text-xl text-slate-200 hover:text-slate-300">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
+                        <a href="./detail-artikel.html" class="text-xl text-slate-200 hover:text-slate-300">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
                     </div>
                     <!-- AUTHOR & DATE -->
                     <div class="flex justify-between items-center mt-4">
@@ -344,7 +344,7 @@
                                 <span class="font-light text-slate-100 text-xs">26 Mar 2022</span>
                             </div>
                         </div>
-                        <!-- <a class="text-blue-600 hover:underline" href="#">Read more</a> -->
+                        <!-- <a class="text-blue-600 hover:underline" href="./detail-artikel.html">Read more</a> -->
                     </div>
                 </div>
             </div>
@@ -357,14 +357,14 @@
                 <!-- SINGLE ARTICLE -->
                 <div class="w-full flex items-center">
                     <!-- IMG -->
-                    <a href="#">
+                    <a href="./detail-artikel.html">
                         <div class="w-48 h-24 overflow-hidden rounded-md">
                             <img src="./asset/img/article.png" class="w-full h-full object-cover transition-all duration-300 transform hover:scale-110" alt="">
                         </div>
                     </a>
                     <!-- DESC -->
                     <div class="w-full flex flex-col p-5">
-                        <a href="#" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
+                        <a href="./detail-artikel.html" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
                         <!-- AUTHOR & DATE -->
                         <div class="flex justify-between items-center mt-2">
                             <div class="flex items-center">
@@ -374,21 +374,21 @@
                                     <span class="font-light text-slate-400 text-xs">26 Mar 2022</span>
                                 </div>
                             </div>
-                            <!-- <a class="text-blue-600 hover:underline" href="#">Read more</a> -->
+                            <!-- <a class="text-blue-600 hover:underline" href="./detail-artikel.html">Read more</a> -->
                         </div>
                     </div>
                 </div>
                 <!-- SINGLE ARTICLE -->
                 <div class="w-full flex items-center">
                     <!-- IMG -->
-                    <a href="#">
+                    <a href="./detail-artikel.html">
                         <div class="w-48 h-24 overflow-hidden rounded-md">
                             <img src="./asset/img/article.png" class="w-full h-full object-cover transition-all duration-300 transform hover:scale-110" alt="">
                         </div>
                     </a>
                     <!-- DESC -->
                     <div class="w-full flex flex-col p-5">
-                        <a href="#" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
+                        <a href="./detail-artikel.html" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
                         <!-- AUTHOR & DATE -->
                         <div class="flex justify-between items-center mt-2">
                             <div class="flex items-center">
@@ -398,21 +398,21 @@
                                     <span class="font-light text-slate-400 text-xs">26 Mar 2022</span>
                                 </div>
                             </div>
-                            <!-- <a class="text-blue-600 hover:underline" href="#">Read more</a> -->
+                            <!-- <a class="text-blue-600 hover:underline" href="./detail-artikel.html">Read more</a> -->
                         </div>
                     </div>
                 </div>
                 <!-- SINGLE ARTICLE -->
                 <div class="w-full flex items-center">
                     <!-- IMG -->
-                    <a href="#">
+                    <a href="./detail-artikel.html">
                         <div class="w-48 h-24 overflow-hidden rounded-md">
                             <img src="./asset/img/article.png" class="w-full h-full object-cover transition-all duration-300 transform hover:scale-110" alt="">
                         </div>
                     </a>
                     <!-- DESC -->
                     <div class="w-full flex flex-col p-5">
-                        <a href="#" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
+                        <a href="./detail-artikel.html" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
                         <!-- AUTHOR & DATE -->
                         <div class="flex justify-between items-center mt-2">
                             <div class="flex items-center">
@@ -422,7 +422,7 @@
                                     <span class="font-light text-slate-400 text-xs">26 Mar 2022</span>
                                 </div>
                             </div>
-                            <!-- <a class="text-blue-600 hover:underline" href="#">Read more</a> -->
+                            <!-- <a class="text-blue-600 hover:underline" href="./detail-artikel.html">Read more</a> -->
                         </div>
                     </div>
                 </div>
@@ -432,14 +432,14 @@
                 <!-- SINGLE ARTICLE -->
                 <div class="w-full flex items-center">
                     <!-- IMG -->
-                    <a href="#">
+                    <a href="./detail-artikel.html">
                         <div class="w-48 h-24 overflow-hidden rounded-md">
                             <img src="./asset/img/article.png" class="w-full h-full object-cover transition-all duration-300 transform hover:scale-110" alt="">
                         </div>
                     </a>
                     <!-- DESC -->
                     <div class="w-full flex flex-col p-5">
-                        <a href="#" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
+                        <a href="./detail-artikel.html" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
                         <!-- AUTHOR & DATE -->
                         <div class="flex justify-between items-center mt-2">
                             <div class="flex items-center">
@@ -449,21 +449,21 @@
                                     <span class="font-light text-slate-400 text-xs">26 Mar 2022</span>
                                 </div>
                             </div>
-                            <!-- <a class="text-blue-600 hover:underline" href="#">Read more</a> -->
+                            <!-- <a class="text-blue-600 hover:underline" href="./detail-artikel.html">Read more</a> -->
                         </div>
                     </div>
                 </div>
                 <!-- SINGLE ARTICLE -->
                 <div class="w-full flex items-center">
                     <!-- IMG -->
-                    <a href="#">
+                    <a href="./detail-artikel.html">
                         <div class="w-48 h-24 overflow-hidden rounded-md">
                             <img src="./asset/img/article.png" class="w-full h-full object-cover transition-all duration-300 transform hover:scale-110" alt="">
                         </div>
                     </a>
                     <!-- DESC -->
                     <div class="w-full flex flex-col p-5">
-                        <a href="#" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
+                        <a href="./detail-artikel.html" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
                         <!-- AUTHOR & DATE -->
                         <div class="flex justify-between items-center mt-2">
                             <div class="flex items-center">
@@ -473,21 +473,21 @@
                                     <span class="font-light text-slate-400 text-xs">26 Mar 2022</span>
                                 </div>
                             </div>
-                            <!-- <a class="text-blue-600 hover:underline" href="#">Read more</a> -->
+                            <!-- <a class="text-blue-600 hover:underline" href="./detail-artikel.html">Read more</a> -->
                         </div>
                     </div>
                 </div>
                 <!-- SINGLE ARTICLE -->
                 <div class="w-full flex items-center">
                     <!-- IMG -->
-                    <a href="#">
+                    <a href="./detail-artikel.html">
                         <div class="w-48 h-24 overflow-hidden rounded-md">
                             <img src="./asset/img/article.png" class="w-full h-full object-cover transition-all duration-300 transform hover:scale-110" alt="">
                         </div>
                     </a>
                     <!-- DESC -->
                     <div class="w-full flex flex-col p-5">
-                        <a href="#" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
+                        <a href="./detail-artikel.html" class="text-slate-700 hover:text-slate-500">Quatly: Kapasitas Kaum Perempuan Harus Ditingkatkan</a>
                         <!-- AUTHOR & DATE -->
                         <div class="flex justify-between items-center mt-2">
                             <div class="flex items-center">
@@ -497,7 +497,7 @@
                                     <span class="font-light text-slate-400 text-xs">26 Mar 2022</span>
                                 </div>
                             </div>
-                            <!-- <a class="text-blue-600 hover:underline" href="#">Read more</a> -->
+                            <!-- <a class="text-blue-600 hover:underline" href="./detail-artikel.html">Read more</a> -->
                         </div>
                     </div>
                 </div>
@@ -509,7 +509,7 @@
                 <hr />
             </div>
             <div class="flex col-span-2">
-                <a href="#" class="flex items-center justify-center mt-3 w-40 bg-slate-900 hover:bg-slate-700 transition-all duration-300 focus:ring-2 focus:ring-slate-300 py-3.5 rounded-md text-white font-semibold mb-2">
+                <a href="./detail-artikel.html" class="flex items-center justify-center mt-3 w-40 bg-slate-900 hover:bg-slate-700 transition-all duration-300 focus:ring-2 focus:ring-slate-300 py-3.5 rounded-md text-white font-semibold mb-2">
                     <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M3.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7Zm0 2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2ZM4 9V8h1v1H4Zm3.5-2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3Zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3ZM1 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2a2 2 0 0 1 2 2v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 10.5V4Zm11.5 6.5a.5.5 0 0 1-.5-.5V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v6.5A1.5 1.5 0 0 0 3.5 12h9a1.5 1.5 0 0 0 1.5-1.5V6a1 1 0 0 0-1-1v5a.5.5 0 0 1-.5.5Z"/></svg>
                     <span class="text-xs uppercase">Semua berita</span>
                 </a>
@@ -710,7 +710,7 @@
                     </div>
                     <div class="flex w-full items-center border-b py-2 px-3 mb-5">
                         <svg class="w-5 h-5 mr-1 text-gray-400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="currentColor" d="M26 29h-.17C6.18 27.87 3.39 11.29 3 6.23A3 3 0 0 1 5.76 3h5.51a2 2 0 0 1 1.86 1.26L14.65 8a2 2 0 0 1-.44 2.16l-2.13 2.15a9.37 9.37 0 0 0 7.58 7.6l2.17-2.15a2 2 0 0 1 2.17-.41l3.77 1.51A2 2 0 0 1 29 20.72V26a3 3 0 0 1-3 3ZM6 5a1 1 0 0 0-1 1v.08C5.46 12 8.41 26 25.94 27a1 1 0 0 0 1.06-.94v-5.34l-3.77-1.51l-2.87 2.85l-.48-.06c-8.7-1.09-9.88-9.79-9.88-9.88l-.06-.48l2.84-2.87L11.28 5Z"/></svg>
-                        <input name="" class="pl-2 outline-none border-none" type="text" placeholder="Nomor HP" />
+                        <input name="" class="pl-2 outline-none border-none w-full" type="text" placeholder="Nomor HP" />
                     </div>
                     <div class="flex w-full items-center border-b py-2 px-3 relative">
                         <svg class="w-5 h-5 mr-1 text-gray-400 absolute top-0 left-0 m-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M464 512a48 48 0 1 0 96 0a48 48 0 1 0-96 0zm200 0a48 48 0 1 0 96 0a48 48 0 1 0-96 0zm-400 0a48 48 0 1 0 96 0a48 48 0 1 0-96 0zm661.2-173.6c-22.6-53.7-55-101.9-96.3-143.3a444.35 444.35 0 0 0-143.3-96.3C630.6 75.7 572.2 64 512 64h-2c-60.6.3-119.3 12.3-174.5 35.9a445.35 445.35 0 0 0-142 96.5c-40.9 41.3-73 89.3-95.2 142.8c-23 55.4-34.6 114.3-34.3 174.9A449.4 449.4 0 0 0 112 714v152a46 46 0 0 0 46 46h152.1A449.4 449.4 0 0 0 510 960h2.1c59.9 0 118-11.6 172.7-34.3a444.48 444.48 0 0 0 142.8-95.2c41.3-40.9 73.8-88.7 96.5-142c23.6-55.2 35.6-113.9 35.9-174.5c.3-60.9-11.5-120-34.8-175.6zm-151.1 438C704 845.8 611 884 512 884h-1.7c-60.3-.3-120.2-15.3-173.1-43.5l-8.4-4.5H188V695.2l-4.5-8.4C155.3 633.9 140.3 574 140 513.7c-.4-99.7 37.7-193.3 107.6-263.8c69.8-70.5 163.1-109.5 262.8-109.9h1.7c50 0 98.5 9.7 144.2 28.9c44.6 18.7 84.6 45.6 119 80c34.3 34.3 61.3 74.4 80 119c19.4 46.2 29.1 95.2 28.9 145.8c-.6 99.6-39.7 192.9-110.1 262.7z"/></svg>
@@ -747,10 +747,10 @@
                         <a href="mailto:setwan.dprd@jatengprov.go.id" class="text-sm">setwan.dprd@jatengprov.go.id</a>
                     </div>
                     <div class="w-full md:w-1/3 flex items-center text-left space-x-3 md:pl-5 hover:text-gray-400">
-                        <a target="_blank" href="#" class="bg-slate-500 p-3 text-white flex justify-center items-center rounded-full">
+                        <a target="_blank" href="./detail-artikel.html" class="bg-slate-500 p-3 text-white flex justify-center items-center rounded-full">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                         </a>
-                        <a href="#" class="text-sm">(024) 8415500</a>
+                        <a href="./detail-artikel.html" class="text-sm">(024) 8415500</a>
                     </div>
                 </div>
             </div>
@@ -853,7 +853,7 @@
 
     <script crossorigin="anonymous" src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-    <script crossorigin="anonymous" src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin="anonymous" defer src="https://cdn.tailwindcss.com"></script>
     <script>
         let swiper = new Swiper(".mySwiper", {
             spaceBetween: 10,
