@@ -360,8 +360,54 @@
                             <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                         </div>
                     </div>
-                    
                 </div>
+
+                <!-- START : PAGINATION -->
+                <div class="mt-20 flex justify-center">
+                    <nav>
+                        <ul class="flex items-center">
+                            <!-- PREV BTN -->
+                            <li>
+                                <a href="#" class="grid place-items-center bg-white focus:ring-2 focus:ring-slate-200 transition-all duration-300 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 rounded-l-lg py-3 px-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <!-- NAV LINK -->
+                            <li>
+                                <a href="#"
+                                    class="bg-white focus:ring-2 focus:ring-slate-200 transition-all duration-300 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-4">1</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="bg-white focus:ring-2 focus:ring-slate-200 transition-all duration-300 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-4">2</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    aria-current="page"
+                                    class="bg-slate-300 focus:ring-2 focus:ring-slate-200 transition-all duration-300 border border-gray-300 text-white hover:bg-blue-100 hover:text-gray-500  py-2 px-4">3</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="bg-white focus:ring-2 focus:ring-slate-200 transition-all duration-300 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 leading-tight py-2 px-4">4</a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="event.preventDefault() || event.stopImmediatePropagation()"
+                                    class="cursor-not-allowed bg-white focus:ring-2 focus:ring-slate-200 transition-all duration-300 border border-gray-300 text-gray-300 leading-tight py-2 px-4">5</a>
+                            </li>
+                            <!-- NEXT BTN -->
+                            <li>
+                                <a href="#" class="grid place-items-center bg-white focus:ring-2 focus:ring-slate-200 transition-all duration-300 border border-gray-300 text-gray-500 hover:bg-gray-100 hover:text-gray-700 rounded-r-lg py-3 px-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- END : PAGINATION -->
             </div>
         </section>
     </div>
@@ -463,6 +509,6 @@
 
     <script crossorigin="anonymous" src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-    <script crossorigin="anonymous" defer src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>

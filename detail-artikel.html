@@ -295,7 +295,21 @@
             <!-- START : TITLE -->
             <header class="mt-5 mb-10">
                 <h1 class="text-2xl lg:text-4xl leading-relaxed font-bold">Sumanto: Ayo, Dorong Kesejahteraan Petani</h1>
-                <p class="text-sm mt-5">Artikel oleh <span class="font-bold">ADMIN</span>, diposting pada : 27 Mar 2022</p>
+                <!-- START : ARTICLE INFO -->
+                <div class="text-sm mt-5 flex space-x-2">
+                    <span>Artikel oleh</span>
+                    <span class="font-bold">ADMIN</span>, 
+                    <span>Diposting pada : <b>27 Mar 2022</b></span> 
+                    <span>|</span>
+                    <span class="text-sm flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                        Dilihat <span>100</span>x
+                    </span>
+                </div>
+                <!-- END : ARTICLE INFO -->
             </header>
             <!-- END : TITLE -->
             <!-- Article IMG -->
@@ -303,8 +317,26 @@
             <main>
                 <p class="leading-loose text-slate-500 mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis in autem minus modi aperiam consequatur fuga repudiandae dolores ad. Tempore tenetur ab enim animi nam nostrum ullam nihil obcaecati? Fuga adipisci ullam doloribus, beatae animi eaque exercitationem pariatur deserunt cum cumque minima eveniet laudantium nemo ex! Consequuntur impedit itaque qui in aliquid aperiam porro corporis culpa accusamus! Sed, perspiciatis? Doloremque labore, molestias accusantium ipsum praesentium minus nisi laudantium sint, suscipit dolorum eveniet modi molestiae quibusdam non vel dignissimos odio similique animi rerum corrupti mollitia voluptate. Sed adipisci iure quis. Recusandae deserunt nemo natus minus minima est quisquam repellat, placeat ducimus suscipit officia, blanditiis perspiciatis. Illum nam quisquam ex at facilis repudiandae veritatis suscipit, exercitationem delectus harum odit expedita voluptatem! Aliquam eaque cum harum rem aperiam! Voluptates quisquam, error ea deleniti doloribus ullam vero harum incidunt tempore architecto magni, dolorum repudiandae sed voluptas doloremque ipsum. Obcaecati omnis numquam maiores iure!</p>
             </main>
+
+            <!-- FORM -->
+            <div class="w-full bg-slate-300 p-5 rounded-md mt-10">
+                <form action="#" onsubmit="event.preventDefault() || event.stopImmediatePropagation()">
+                    <p class="mb-5 text-lg">
+                        Form revisi artikel
+                    </p>
+                    <div class="w-full mb-5">
+                        <input type="text" class="w-full transition-all duration-300 focus:ring-2 focus:ring-slate-400 p-3 rounded-md text-sm focus:outline-none" placeholder="Tulis revisi pada artikel">
+                    </div>
+                    <div class="flex space-x-3 items-center">
+                        <button type="submit" class="text-white w-24 h-10 text-xs uppercase rounded-md transition-all duration-300 focus:ring-2 focus:ring-yellow-300 bg-yellow-500 hover:bg-yellow-600">Revisi</button>
+                        <button type="submit" class="text-white w-24 h-10 text-xs uppercase rounded-md transition-all duration-300 focus:ring-2 focus:ring-red-300 bg-red-500 hover:bg-red-600">Batalkan</button>
+                        <button type="submit" class="text-white w-24 h-10 text-xs uppercase rounded-md transition-all duration-300 focus:ring-2 focus:ring-green-300 bg-green-500 hover:bg-green-600">Setujui</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <!-- END : LEFT CONTENT -->
+
         <!-- RIGHT -->
         <div class="sticky-sidebar w-full lg:col-span-1 lg:border-l lg:pl-5">
             <!-- SEARCHBOX -->
