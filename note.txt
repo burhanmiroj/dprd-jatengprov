@@ -1,0 +1,4 @@
+- Halaman ranpa sidebar
+- LOGO di mobile ditambahi text
+- Jumlah diliht artikel
+- Halaman hasil pencarian
