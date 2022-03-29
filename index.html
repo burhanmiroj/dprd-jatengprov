@@ -111,37 +111,13 @@
                             <svg x-show="open" x-transition class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
-                    <div :class="{'flex': open, 'hidden': !open}"
-                     class="flex-col flex-grow hidden md:pb-4 lg:pb-0 lg:flex lg:justify-end lg:flex-row lg:items-center min-h-screen md:min-h-min h-auto lg:mb-0 overflow-y-auto lg:overflow-y-visible">
+                    <div :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden md:pb-4 lg:pb-0 lg:flex lg:justify-end lg:flex-row lg:items-center min-h-screen md:min-h-min h-auto lg:mb-0 overflow-y-auto lg:overflow-y-visible">
                         <!-- SINGLE : Beranda -->
-                        <a class="px-4 py-2 mt-2 text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="#">Beranda</a>
+                        <a class="px-4 py-2 mt-2 md:text-sm font-semibold text-slate-100 hover:text-slate-300 lg:mt-0 lg:ml-1" href="#">Beranda</a>
                         <!-- SINGLE -->
-                        <!-- SINGLE DROPDOWN : Profil -->
-                        <!-- <div x-data="{ open: false }" @click.away="open = false" class="relative">
-                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
-                                <span class="ml-1">Profil</span>
-                                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                            </button>
-                            <div x-show="open" @click.away="!open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 left-0 w-full lg:w-72 mt-2 lg:mt-6 origin-top-left">
-                                <ul class="px-2 pt-2 pb-4 bg-white rounded-lg shadow-lg w-full">
-                                    <li class="p-3 hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Selayang Pandang</a>
-                                    </li>
-                                    <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Tugas dan Wewenang</a>
-                                    </li>
-                                    <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Kewajiban Anggota</a>
-                                    </li>
-                                    <li class="p-3 border-t hover:bg-slate-200 rounded-md">
-                                        <a @click="open = false" href="#" class="text-sm flex w-full h-full hover:text-slate-400">Visi & Misi</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>  -->
                         <!-- SINGLE DROPDOWN : Sekretariat -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative">
-                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
+                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row justify-between lg:justify-start text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 lg:text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
                                 <span class="ml-1">Sekretariat</span>
                                 <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
@@ -177,7 +153,7 @@
                         </div> 
                         <!-- SINGLE DROPDOWN : Fraksi -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative">
-                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
+                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex justify-between lg:justify-start flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 lg:text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
                                 <span class="ml-1">Fraksi</span>
                                 <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
@@ -238,7 +214,7 @@
                         </div>
                         <!-- SINGLE DROPDOWN : Kelengkapan dewan -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative">
-                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
+                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex justify-between lg:justify-start flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 lg:text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
                                 <span class="ml-1">Kelengkapan Dewan</span>
                                 <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
@@ -276,7 +252,7 @@
                         </div>    
                         <!-- SINGLE DROPDOWN : Produk hukum  -->
                         <div x-data="{ open: false }" @click.away="open = false" class="relative md:mr-3">
-                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
+                            <button @click="open = !open" :class="{'bg-slate-800' : open}" class="flex justify-between lg:justify-start flex-row text-slate-100 hover:text-slate-300 hover:bg-slate-700 items-center w-full px-3 py-2 mt-2 lg:text-sm font-semibold text-left bg-transparent rounded-lg lg:w-auto lg:inline lg:mt-0 lg:ml-1 focus:outline-none focus:shadow-outline">
                                 <span class="ml-1">Produk Hukum</span>
                                 <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 -mt-0.5 ml-1 lg:ml-0.5 transition-transform duration-200 transform lg:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </button>
@@ -300,7 +276,7 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
                     </div>
                 </div>
                 <!-- SEARCH BTN -->
